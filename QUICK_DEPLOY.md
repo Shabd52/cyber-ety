@@ -39,7 +39,7 @@ git ls-files | grep -i ".env"
 | Environment | `Node` |
 | Region | `US (Ohio)` |
 | Branch | `main` |
-| Build Command | `cd backend && npm install && npm run build` |
+| Build Command | `cd shared && npm install && npm run build && cd ../backend && npm install && npm run build` |
 | Start Command | `cd backend && npm start` |
 
 ### Step 3: Add Environment Variables

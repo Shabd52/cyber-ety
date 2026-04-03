@@ -46,7 +46,7 @@ SOCKET_CORS=https://your-frontend-domain.vercel.app
    - **Environment**: `Node`
    - **Region**: `US (Ohio)` or closest to your users
    - **Branch**: `main`
-   - **Build Command**: `cd backend && npm install && npm run build`
+   - **Build Command**: `cd shared && npm install && npm run build && cd ../backend && npm install && npm run build`
    - **Start Command**: `cd backend && npm start`
    - **Add Environment Variables**:
      - `PORT`: `10000`

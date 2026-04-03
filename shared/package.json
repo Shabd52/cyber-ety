@@ -2,12 +2,12 @@
   "name": "@cyber-etymology/shared",
   "version": "1.0.0",
   "description": "Shared types and constants for Cyber Etymology",
-  "private": true,
-  "main": "src/index.ts",
-  "types": "src/index.ts",
-  "files": ["src"],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
-    "build": "tsc --noEmit"
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "devDependencies": {
     "typescript": "^5.3.0"
