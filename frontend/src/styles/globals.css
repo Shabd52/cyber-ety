@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #0a0e27;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1f3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00d4ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff41;
+}
+
+/* Global transitions */
+* {
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+/* Utility classes */
+.glow-blue {
+  text-shadow: 0 0 10px #00d4ff;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.glow-green {
+  text-shadow: 0 0 10px #00ff41;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.glow-purple {
+  text-shadow: 0 0 10px #b300ff;
+  box-shadow: 0 0 10px rgba(179, 0, 255, 0.5);
+}
+
+.glow-pink {
+  text-shadow: 0 0 10px #ff006e;
+  box-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+}
+
+/* Button styling */
+button, a.button {
+  padding: 12px 24px;
+  border: 2px solid #00d4ff;
+  background: transparent;
+  color: #00d4ff;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+button:hover, a.button:hover {
+  background-color: #00d4ff;
+  color: #0a0e27;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Input styling */
+input, textarea {
+  background-color: #1a1f3a;
+  border: 2px solid #00d4ff;
+  color: #00d4ff;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+  border-color: #00ff41;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Fullscreen mode */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes glow-pulse {
+  0% { box-shadow: 0 0 5px rgba(0, 212, 255, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(0, 212, 255, 0.3); }
+}
+
+@keyframes slide-in {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

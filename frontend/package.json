@@ -1,0 +1,35 @@
+{
+  "name": "@cyber-etymology/frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Cyber Etymology",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:e2e": "cypress open"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "socket.io-client": "^4.7.0",
+    "axios": "^1.6.0",
+    "zustand": "^4.4.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.3.0",
+    "classnames": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/node": "^20.10.0",
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "@cypress/webpack-dev-server": "^5.0.0",
+    "cypress": "^13.6.0",
+    "@cyber-etymology/shared": "*"
+  }
+}
